@@ -13,8 +13,8 @@
       .bind(_mousedown_, firelogclick)
       .bind(_click_, click)
     },
-    teardown: function(namespaces){
-      $(this).unbind(namespace)
+    teardown: function('.logclick'){
+      $(this).unbind('.logclick')
     }
   }
   
@@ -32,6 +32,6 @@
   }
   
   var
-    _mousedown_= 'mousedown'+namespace, _click_= 'click'+namespace, _fired_= 'fired'+namespace
+    _mousedown_= 'mousedown.logclick', _click_= 'click.logclick', _fired_= 'fired.logclick'
   
 })(jQuery);
